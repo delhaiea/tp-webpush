@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c35b4154-96c4-436c-a0dd-1dac799719c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keys.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/subscription.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/javascripts/config.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/javascripts/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603093021214</updated>
       <workItem from="1603093022994" duration="4048000" />
-      <workItem from="1603110162129" duration="4960000" />
+      <workItem from="1603110162129" duration="6412000" />
     </task>
     <servers />
   </component>
@@ -78,21 +69,21 @@
       <screen x="0" y="0" width="2560" height="1395" />
     </state>
     <state x="1018" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1395/2560.180.1920.1080@0.0.2560.1395" timestamp="1603119296994" />
-    <state width="2537" height="391" key="GridCell.Tab.0.bottom" timestamp="1603119391132">
+    <state width="2537" height="391" key="GridCell.Tab.0.bottom" timestamp="1603119604306">
       <screen x="0" y="0" width="2560" height="1395" />
     </state>
-    <state width="2537" height="391" key="GridCell.Tab.0.bottom/0.0.2560.1395/2560.180.1920.1080@0.0.2560.1395" timestamp="1603119391132" />
-    <state width="2537" height="391" key="GridCell.Tab.0.center" timestamp="1603119391131">
+    <state width="2537" height="391" key="GridCell.Tab.0.bottom/0.0.2560.1395/2560.180.1920.1080@0.0.2560.1395" timestamp="1603119604306" />
+    <state width="2537" height="391" key="GridCell.Tab.0.center" timestamp="1603119604306">
       <screen x="0" y="0" width="2560" height="1395" />
     </state>
-    <state width="2537" height="391" key="GridCell.Tab.0.center/0.0.2560.1395/2560.180.1920.1080@0.0.2560.1395" timestamp="1603119391131" />
-    <state width="2537" height="391" key="GridCell.Tab.0.left" timestamp="1603119391131">
+    <state width="2537" height="391" key="GridCell.Tab.0.center/0.0.2560.1395/2560.180.1920.1080@0.0.2560.1395" timestamp="1603119604306" />
+    <state width="2537" height="391" key="GridCell.Tab.0.left" timestamp="1603119604306">
       <screen x="0" y="0" width="2560" height="1395" />
     </state>
-    <state width="2537" height="391" key="GridCell.Tab.0.left/0.0.2560.1395/2560.180.1920.1080@0.0.2560.1395" timestamp="1603119391131" />
-    <state width="2537" height="391" key="GridCell.Tab.0.right" timestamp="1603119391132">
+    <state width="2537" height="391" key="GridCell.Tab.0.left/0.0.2560.1395/2560.180.1920.1080@0.0.2560.1395" timestamp="1603119604306" />
+    <state width="2537" height="391" key="GridCell.Tab.0.right" timestamp="1603119604306">
       <screen x="0" y="0" width="2560" height="1395" />
     </state>
-    <state width="2537" height="391" key="GridCell.Tab.0.right/0.0.2560.1395/2560.180.1920.1080@0.0.2560.1395" timestamp="1603119391131" />
+    <state width="2537" height="391" key="GridCell.Tab.0.right/0.0.2560.1395/2560.180.1920.1080@0.0.2560.1395" timestamp="1603119604306" />
   </component>
 </project>

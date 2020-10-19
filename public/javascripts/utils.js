@@ -29,13 +29,14 @@ function subscribeUserToPush() {
 
 function startServiceWorker(jsonKey) {
     return navigator.serviceWorker.register('javascripts/service-worker.js')
-        .then(function(registration) {
-            const subscribeOptions = {
-                userVisibleOnly: true,
-                applicationServerKey: urlBase64ToUint8Array(jsonKey.vapidKey)
-            };
-
-            return registration.pushManager.subscribe(subscribeOptions);
+        .then(function(reg) {
+            if(reg.active) {
+                const subscribeOptions = {
+                    userVisibleOnly: true,
+                    applicationServerKey: urlBase64ToUint8Array(jsonKey.vapidKey)
+                };
+                return reg.pushManager.subscribe(subscribeOptions);
+            }
         })
         .then(function(pushSubscription) {
             console.log('Received PushSubscription: ', JSON.stringify(pushSubscription));
