@@ -3,7 +3,7 @@ function checkBrowser() {
 }
 
 function askPermission() {
-    return new Promise(function (resolve, reject) {
+    return new Promise((resolve, reject) => {
 
         Notification.requestPermission().then((result) => {
             //
@@ -20,18 +20,26 @@ function askPermission() {
 }
 
 function subscribeUserToPush() {
+    fetch('/api/get-vapid-public-key')
+        .then(function(response) {
+            return response.json();
+        })
+        .then(startServiceWorker)
+}
+
+function startServiceWorker(jsonKey) {
     return navigator.serviceWorker.register('javascripts/service-worker.js')
-        .then((registration) => {
+        .then(function(registration) {
             const subscribeOptions = {
                 userVisibleOnly: true,
-                applicationServerKey: urlBase64ToUint8Array(__ApplicationServerKey)
+                applicationServerKey: urlBase64ToUint8Array(jsonKey.vapidKey)
             };
 
             return registration.pushManager.subscribe(subscribeOptions);
         })
-        .then((pushSubscription) => {
+        .then(function(pushSubscription) {
             console.log('Received PushSubscription: ', JSON.stringify(pushSubscription));
-            return pushSubscription;
+            return sendSubscriptionToBackEnd(pushSubscription);
         });
 }
 
@@ -48,4 +56,26 @@ function urlBase64ToUint8Array(base64String) {
         outputArray[i] = rawData.charCodeAt(i);
     }
     return outputArray;
+}
+
+function sendSubscriptionToBackEnd(subscription) {
+    return fetch('/api/save-subscription/', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(subscription)
+    })
+        .then(function(response) {
+            if (!response.ok) {
+                throw new Error('Bad status code from server.');
+            }
+
+            return response.json();
+        })
+        .then(function(responseData) {
+            if (!(responseData.data && responseData.data.success)) {
+                throw new Error('Bad response from server.');
+            }
+        });
 }
