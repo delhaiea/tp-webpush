@@ -24,6 +24,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.10.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.10.0" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -36,7 +42,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603093021214</updated>
-      <workItem from="1603093022994" duration="1298000" />
+      <workItem from="1603093022994" duration="2020000" />
     </task>
     <servers />
   </component>
@@ -48,21 +54,21 @@
       <screen x="0" y="0" width="2560" height="1395" />
     </state>
     <state x="1018" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1395/2560.180.1920.1080@0.0.2560.1395" timestamp="1603093174456" />
-    <state width="2537" height="391" key="GridCell.Tab.0.bottom" timestamp="1603094098000">
+    <state width="2537" height="391" key="GridCell.Tab.0.bottom" timestamp="1603094826278">
       <screen x="0" y="0" width="2560" height="1395" />
     </state>
-    <state width="2537" height="391" key="GridCell.Tab.0.bottom/0.0.2560.1395/2560.180.1920.1080@0.0.2560.1395" timestamp="1603094098000" />
-    <state width="2537" height="391" key="GridCell.Tab.0.center" timestamp="1603094098000">
+    <state width="2537" height="391" key="GridCell.Tab.0.bottom/0.0.2560.1395/2560.180.1920.1080@0.0.2560.1395" timestamp="1603094826278" />
+    <state width="2537" height="391" key="GridCell.Tab.0.center" timestamp="1603094826278">
       <screen x="0" y="0" width="2560" height="1395" />
     </state>
-    <state width="2537" height="391" key="GridCell.Tab.0.center/0.0.2560.1395/2560.180.1920.1080@0.0.2560.1395" timestamp="1603094098000" />
-    <state width="2537" height="391" key="GridCell.Tab.0.left" timestamp="1603094098000">
+    <state width="2537" height="391" key="GridCell.Tab.0.center/0.0.2560.1395/2560.180.1920.1080@0.0.2560.1395" timestamp="1603094826278" />
+    <state width="2537" height="391" key="GridCell.Tab.0.left" timestamp="1603094826277">
       <screen x="0" y="0" width="2560" height="1395" />
     </state>
-    <state width="2537" height="391" key="GridCell.Tab.0.left/0.0.2560.1395/2560.180.1920.1080@0.0.2560.1395" timestamp="1603094098000" />
-    <state width="2537" height="391" key="GridCell.Tab.0.right" timestamp="1603094098000">
+    <state width="2537" height="391" key="GridCell.Tab.0.left/0.0.2560.1395/2560.180.1920.1080@0.0.2560.1395" timestamp="1603094826277" />
+    <state width="2537" height="391" key="GridCell.Tab.0.right" timestamp="1603094826278">
       <screen x="0" y="0" width="2560" height="1395" />
     </state>
-    <state width="2537" height="391" key="GridCell.Tab.0.right/0.0.2560.1395/2560.180.1920.1080@0.0.2560.1395" timestamp="1603094098000" />
+    <state width="2537" height="391" key="GridCell.Tab.0.right/0.0.2560.1395/2560.180.1920.1080@0.0.2560.1395" timestamp="1603094826278" />
   </component>
 </project>
