@@ -7,16 +7,11 @@
 </head>
 <body>
 <p>Bonjour !</p>
-<script src="javascripts/utils.js"></script>
-<script>
-  window.onload = function main() {
-    if(!checkBrowser()) {
-      console.error("pas compatible déso");
-      return;
-    }
-    let sw = registerServiceWorker();
-    console.log(sw);
-  }
-</script>
+<div id="msg">
+  <button onclick="notification()"> Acceptez les notifications </button>
+</div>
 </body>
+<script src="javascripts/config.js"></script>
+<script src="javascripts/utils.js"></script>
+<script src="javascripts/script.js"></script>
 </html>
