@@ -9,9 +9,13 @@
 <p>Bonjour !</p>
 <script src="javascripts/utils.js"></script>
 <script>
-  function main() {
-    if(checkBrowser())
-      return true;
+  window.onload = function main() {
+    if(!checkBrowser()) {
+      console.error("pas compatible déso");
+      return;
+    }
+    let sw = registerServiceWorker();
+    console.log(sw);
   }
 </script>
 </body>
