@@ -24,19 +24,18 @@ function subscribeUserToPush() {
         .then(function(response) {
             return response.json();
         })
-        .then(startServiceWorker)
+        .then(startServiceWorker);
 }
 
 function startServiceWorker(jsonKey) {
-    return navigator.serviceWorker.register('javascripts/service-worker.js')
-        .then(function(reg) {
-            if(reg.active) {
-                const subscribeOptions = {
-                    userVisibleOnly: true,
-                    applicationServerKey: urlBase64ToUint8Array(jsonKey.vapidKey)
-                };
-                return reg.pushManager.subscribe(subscribeOptions);
-            }
+    return navigator.serviceWorker.register('service-worker.js')
+        .then(function(registration) {
+            const subscribeOptions = {
+                userVisibleOnly: true,
+                applicationServerKey: urlBase64ToUint8Array(jsonKey.vapidKey)
+            };
+
+            return registration.pushManager.subscribe(subscribeOptions);
         })
         .then(function(pushSubscription) {
             console.log('Received PushSubscription: ', JSON.stringify(pushSubscription));
